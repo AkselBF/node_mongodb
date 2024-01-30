@@ -16,6 +16,8 @@ export const createPost = async (req, res) => {
 
       await database.collection("users").updateOne({ name: owner }, { $push: { posts: postResult.insertedId } }, { session });
 
+      await session.commitTransaction();
+
       session.endSession();
 
       res.status(201).json(postResult.insertedId);

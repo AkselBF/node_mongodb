@@ -28,7 +28,7 @@ async function closeDatabase() {
   try {
     await client.close();
     console.log("Closed to database");
-    return client.db("lectureTest");
+    client.db("lectureTest");
   }
   catch (e) {
     console.error("Error closing to the database", e);
