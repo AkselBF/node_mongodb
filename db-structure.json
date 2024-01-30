@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "aksel",
+      "id": "auto",
+      "age": 22, 
+      "posts": [2, 45, 26, 17]
+    }, 
+    {
+      "name": "marius",
+      "id": "auto",
+      "age": 16, 
+      "posts": [3, 35, 16, 87]
+    }
+  ],
+  "posts": [
+    {
+      "id": "auto",
+      "title": "Hello world",
+      "content": "This is my first post",
+      "owner": 1
+    }
+  ]
+}
